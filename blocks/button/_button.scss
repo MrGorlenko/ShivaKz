@@ -21,4 +21,59 @@
     &:hover{
         background-color: darken($color: #ADB00C, $amount: 10);
     }
+
+    &_close{
+        z-index: 10;
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 35px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        right: 15px;
+        margin-top: 15px;
+        &:hover{
+            color: black;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .button{
+        &_close{
+            right: 120px;      
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .button{
+        &_close{
+            right: 80px;
+        }
+    }
+}
+
+
+@media (max-width: 576px){
+    .button{
+        margin-top: 0;
+        margin-bottom: 0;
+        &_close{
+            right: 30px;
+        }
+        &_modal{
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 440px){
+    .button{
+        &_modal{
+            width: 180px;
+        }
+    }
 }

@@ -305,6 +305,11 @@
   min-height: 398px;
 }
 
+.work-info__item:after {
+  bottom: 45px;
+  height: 90%;
+}
+
 .work-info__img {
   width: 100%;
   min-height: 400px;
@@ -339,14 +344,14 @@
   }
 }
 
-@media (max-width: 992px) {
-  .work-info {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+@media (min-width: 1251px) {
+  .work-info__item:after {
+    bottom: 45px;
+    height: 90%;
   }
-  .work-info__img {
-    width: 60%;
-  }
+}
+
+@media (min-width: 993px) {
   .work-info__item {
     min-height: 398px;
   }
@@ -359,9 +364,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 45px;
     width: 100%;
-    height: 90%;
     color: #fff;
     text-decoration: none;
     opacity: 0;
@@ -370,8 +373,39 @@
     -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
             transform: matrix(1, 0, 0, -1, 0, 0);
   }
+}
+
+@media (max-width: 992px) {
+  .work-info {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+  .work-info__img {
+    width: 500px;
+    min-height: 290px;
+    max-height: 300px;
+  }
   .work-info__item_desktop {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .work-info {
+    grid-gap: 0px;
+  }
+  .work-info__item {
+    min-height: 330px;
+  }
+  .work-info__img {
+    width: 300px;
+    min-height: 210px;
+    max-height: 220px;
+  }
+  .work-info__label {
+    width: 300px;
+    font-size: 23px;
   }
 }
 
@@ -382,16 +416,6 @@
 .work__container {
   position: relative;
   padding-bottom: 50px;
-}
-
-.work__modal {
-  position: absolute;
-  top: 100px;
-  width: 100%;
-}
-
-.work__slider {
-  width: 100%;
 }
 
 .work__title {
@@ -419,6 +443,160 @@
 
 .button:hover {
   background-color: #7e8009;
+}
+
+.button_close {
+  z-index: 10;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 35px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  right: 15px;
+  margin-top: 15px;
+}
+
+.button_close:hover {
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .button_close {
+    right: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button_close {
+    right: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .button_close {
+    right: 30px;
+  }
+  .button_modal {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .button_modal {
+    width: 180px;
+  }
+}
+
+.work-modal {
+  background: rebeccapurple;
+  top: 100px;
+  width: 100%;
+}
+
+.work-modal__slider {
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.work-modal__img {
+  margin: auto;
+  margin-top: 50px;
+  min-height: 390px;
+  max-height: 400px;
+}
+
+.work-modal__label {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  color: #C7C7C7;
+  font-size: 40px;
+}
+
+@media (max-width: 1250px) {
+  .work-modal__img {
+    width: 570px;
+  }
+}
+
+@media (max-width: 992px) {
+  .work-modal {
+    width: 80%;
+    margin: auto;
+  }
+  .work-modal__img {
+    width: 400px;
+    min-height: 290px;
+    max-height: 300px;
+  }
+  .work-modal__label {
+    font-size: 25px;
+  }
+  .slick-arrow {
+    width: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-modal__img {
+    width: 300px;
+    min-height: 220px;
+  }
+  .work-modal__label {
+    font-size: 20px;
+  }
+  .slick-arrow {
+    width: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .work-modal {
+    width: 95%;
+  }
+  .work-modal__img {
+    width: 220px;
+    min-height: 130px;
+  }
+  .work-modal__label {
+    font-size: 16px;
+  }
+  .slick-arrow {
+    width: 35px;
+  }
+}
+
+@media (max-width: 440px) {
+  .work-modal__img {
+    width: 180px;
+    min-height: 110px;
+  }
+  .work-modal__label {
+    width: 180px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .slick-arrow {
+    width: 35px;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -779,6 +957,18 @@ template {
 @media (max-width: 1250px) {
   .container {
     max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */

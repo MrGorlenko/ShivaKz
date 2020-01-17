@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    $('#work__slider').slick({
-        infinite: false
+    $('#work-modal__slider').slick({
+        infinite: false,
+        nextArrow: '<img src="../../images/right.png" alt="">',
+        prevArrow: '<img src="../../images/left.png" alt="">'
     });
 });
+
