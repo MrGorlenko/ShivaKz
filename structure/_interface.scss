@@ -1,0 +1,21 @@
+.container{
+    margin: auto;
+    max-width: 1200px;
+}
+
+.section-title{
+    padding-top: 55px;
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    font-size: 65px;
+
+}
+
+
+@media (max-width: 1250px){
+    .container{
+        max-width: 960px;
+    }
+}
