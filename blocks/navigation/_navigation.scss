@@ -1,0 +1,42 @@
+.navigation{
+    background-color: rgba($color: #B4B659, $alpha: 1.0);
+    mix-blend-mode: multiply;
+    min-height: 165px;
+    max-height: 170px;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+
+        text-decoration: none;
+        font-size: 26px;
+        font-weight: bold;
+
+        color: #000;
+
+        &:hover{
+            background-color: #000;
+            color: #ffffff;
+
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .navigation{
+        &__container{
+        display: none;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .navigation{
+        min-height: 110px;
+        max-height: 120px;
+    }
+}

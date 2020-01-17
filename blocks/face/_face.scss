@@ -1,0 +1,31 @@
+.face{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../images/face-image.JPG');
+    background-size: cover;
+    &__tagline{
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+
+        font-size: 40px;
+        font-style: italic;
+    }
+}
+
+@media (max-width: 768px){
+    .face{
+        background-position-x: -225px;
+        &__tagline{
+            font-size: 34px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .face{
+        &__tagline{
+            font-size: 25px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.header{
+    position: absolute;
+    top: 90px;
+
+    font-size: 65px;
+
+    display: inline-block;
+    &_white{
+        margin-left: 180px;
+
+        color: #fff;
+    }
+}
+
+@media (max-width: 992px){
+    .header{
+        top: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        font-size: 45px;
+        left: 15px;
+        &_white{
+            margin-left: 120px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .header{
+        font-size: 40px;
+        left: 15px;
+        &_white{
+            margin-left: 110px;
+        }
+    }
+}
+
