@@ -482,7 +482,7 @@
     margin-bottom: 0;
   }
   .button_close {
-    right: 30px;
+    right: 70px;
   }
   .button_modal {
     margin-top: 20px;
@@ -492,6 +492,9 @@
 @media (max-width: 440px) {
   .button_modal {
     width: 180px;
+  }
+  .button_close {
+    right: 50px;
   }
 }
 
@@ -574,7 +577,7 @@
 
 @media (max-width: 576px) {
   .work-modal {
-    width: 95%;
+    width: 80%;
   }
   .work-modal__img {
     width: 220px;
@@ -589,6 +592,9 @@
 }
 
 @media (max-width: 440px) {
+  .work-modal {
+    width: 75%;
+  }
   .work-modal__img {
     width: 180px;
     min-height: 110px;

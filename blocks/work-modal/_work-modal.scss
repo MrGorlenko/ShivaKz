@@ -83,7 +83,7 @@
 
 @media (max-width: 576px){
     .work-modal{
-        width: 95%;
+        width: 80%;
         &__img{
             width: 220px;
             min-height: 130px;
@@ -100,6 +100,7 @@
 
 @media (max-width: 440px){
     .work-modal{
+        width: 75%;
         &__img{
             width: 180px;
             min-height: 110px;

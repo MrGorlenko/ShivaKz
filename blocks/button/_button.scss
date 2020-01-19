@@ -62,7 +62,7 @@
         margin-top: 0;
         margin-bottom: 0;
         &_close{
-            right: 30px;
+            right: 70px;
         }
         &_modal{
             margin-top: 20px;
@@ -74,6 +74,9 @@
     .button{
         &_modal{
             width: 180px;
+        }
+        &_close{
+            right: 50px;
         }
     }
 }

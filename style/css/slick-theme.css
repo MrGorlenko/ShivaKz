@@ -19,9 +19,9 @@
   position: absolute;
   display: block;
   height: 60%;
-  width: 21%;
+  width: 15%;
   line-height: 0px;
-  font-size: 60px;
+  font-size: 20px;
   cursor: pointer;
   background: transparent;
   color: transparent;
@@ -83,7 +83,7 @@
 }
 
 .slick-next {
-  right: 70px;
+  right: 5px;
 }
 
 [dir="rtl"] .slick-next {
@@ -170,9 +170,44 @@
   opacity: 0.75;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 992px){
+  .slick-prev,
+  .slick-next{
+    width: 8%;
+    height: 20%;
+  }
+
+  .slick-next:before {
+    content: url('../../images/left-mobile.png'); 
+    /* content: "→"; */
+  }
+
+  .slick-prev:before {
+    /* content: "←"; */
+    content: url('../../images/right-mobile.png'); 
+  }
+}
+
+@media (max-width: 576px){
+  .slick-prev,
+  .slick-next{
+    width: 11%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 440px) {
+  .slick-prev,
+  .slick-next{
+    width: 19%;
+    height: 20%;
+  }
+
   .slick-next {
-    right: 10px;
+    right: -25px;
+  }
+  .slick-prev {
+    left: -25px;
   }
 }
 /*# sourceMappingURL=slick-theme.css.map */
