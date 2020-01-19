@@ -31,6 +31,10 @@
 
 }
 
+.slick-arrow{
+    z-index: 100;
+}
+
 @media (max-width: 1250px){
     .work-modal{
         &__img{
