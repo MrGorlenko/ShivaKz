@@ -420,7 +420,7 @@
 
 .work__title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   color: #C7C7C7;
 }
 
@@ -611,6 +611,7 @@
   .work-modal__img {
     width: 220px;
     min-height: 130px;
+    margin-top: 0;
   }
   .work-modal__label {
     font-size: 16px;
@@ -637,6 +638,150 @@
   }
   .slick-arrow {
     width: 35px;
+  }
+}
+
+.underline {
+  border: none;
+  content: '';
+  height: 4px;
+  width: 370px;
+  background: #ADB00C;
+}
+
+@media (max-width: 992px) {
+  .underline {
+    width: 235px;
+  }
+}
+
+.approach {
+  min-height: 980px;
+  background: #C7C7C7;
+}
+
+.approach__title {
+  margin-bottom: 0;
+}
+
+.approach__container {
+  min-height: 700px;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.approach__list {
+  width: 50%;
+}
+
+.approach__list-items {
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  text-align: center;
+  font-size: 25px;
+}
+
+.approach__list-items li {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.approach__list-items li:nth-child(3)::after {
+  display: none;
+}
+
+.approach__list-items li::after {
+  margin-top: 35px;
+  background-size: contain;
+  width: 50px;
+  height: 100px;
+  display: block;
+  content: '';
+  background-image: url("../../images/arrow.png");
+}
+
+.approach__button {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.approach__photo {
+  width: 50%;
+  background-image: url("../../images/approach-face.JPG");
+  background-size: cover;
+  background-position-x: -320px;
+}
+
+@media (max-width: 1250px) {
+  .approach__list-items {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 992px) {
+  .approach {
+    min-height: 935px;
+  }
+  .approach__container {
+    max-height: 575px;
+  }
+  .approach__list {
+    width: 100%;
+  }
+  .approach__list-items {
+    padding-left: 0;
+  }
+  .approach__list-items li::after {
+    margin-top: 75px;
+  }
+  .approach__button {
+    margin-top: 0;
+  }
+  .approach__photo {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .approach {
+    min-height: 640px;
+  }
+  .approach__container {
+    min-height: 420px;
+  }
+  .approach__list-items {
+    font-size: 18px;
+  }
+  .approach__list-items li::after {
+    margin-top: 25px;
+    width: 28px;
+    height: 55px;
   }
 }
 
@@ -990,7 +1135,7 @@ template {
 
 .section-title {
   padding-top: 55px;
-  margin-bottom: 50px;
+  margin-top: 0;
   text-align: center;
   font-size: 65px;
 }
@@ -1006,7 +1151,7 @@ template {
     max-width: 750px;
   }
   .section-title {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 

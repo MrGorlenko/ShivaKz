@@ -1,0 +1,108 @@
+.approach{
+    min-height: 980px;
+    background: #C7C7C7;
+    &__title{
+        margin-bottom: 0;
+    }
+    &__container{
+        min-height: 700px;
+        margin-top: 70px;
+        display: flex;
+    }
+    &__list{
+        width: 50%;
+    }
+    &__list-items{
+        margin-top: 0;
+        margin-bottom: 0;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        list-style-type: none;
+        text-align: center;
+        font-size: 25px;
+        li{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:nth-child(3){
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        li::after{
+            margin-top: 35px;
+            background-size: contain;
+            width: 50px;
+            height: 100px;
+            display: block;
+            content: '';
+            background-image: url('../../images/arrow.png');
+        }
+    }
+    &__button{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    &__photo{
+        width: 50%;
+        background-image: url('../../images/approach-face.JPG');
+        background-size: cover;
+        background-position-x: -320px;
+    }
+}
+
+
+@media (max-width: 1250px){
+    .approach{
+        &__list-items{
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .approach{
+        min-height: 935px;
+        &__container{
+            max-height: 575px;
+        }
+        &__list{
+            width: 100%;
+        }
+        &__list-items{
+            padding-left: 0;
+            li::after{
+                margin-top: 75px;
+            }
+        }
+        &__button{
+            margin-top: 0;
+        }
+        &__photo{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .approach{
+        min-height: 640px;
+        &__container{
+            min-height: 420px;
+        }
+        &__list-items{
+            font-size: 18px;
+            li::after{
+                margin-top: 25px;
+                width: 28px;
+                height: 55px;
+            }
+        }
+    }
+}

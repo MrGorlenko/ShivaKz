@@ -200,6 +200,7 @@
 @media (max-width: 576px){
   .slick-prev,
   .slick-next{
+    top:40%;
     width: 8%;
     height: 20%;
   }

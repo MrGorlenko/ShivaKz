@@ -1,0 +1,13 @@
+.underline{
+    border: none;
+    content: '';
+    height: 4px;
+    width: 370px;
+    background: #ADB00C;
+}
+
+@media (max-width: 992px){
+    .underline{
+        width: 235px;
+    }
+}
