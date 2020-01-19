@@ -188,10 +188,19 @@
   }
 }
 
+@media (max-width: 768px){
+  .slick-next {
+    right: 70px;
+  }
+  .slick-prev {
+    left: 70px;
+  }
+}
+
 @media (max-width: 576px){
   .slick-prev,
   .slick-next{
-    width: 11%;
+    width: 8%;
     height: 20%;
   }
 }
@@ -204,10 +213,10 @@
   }
 
   .slick-next {
-    right: -25px;
+    right: 0px;
   }
   .slick-prev {
-    left: -25px;
+    left: 0px;
   }
 }
 /*# sourceMappingURL=slick-theme.css.map */

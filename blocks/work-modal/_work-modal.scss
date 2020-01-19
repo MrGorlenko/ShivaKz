@@ -1,7 +1,12 @@
 .work-modal{
-    background: rebeccapurple;
-    top: 100px;
+    // display: none;
+    visibility: hidden;
+    position: fixed;
+    max-width:1200px;
+    background: #121212;
+    top: 40px;
     width: 100%;
+    z-index: 98;
     &__slider{
         width: 100%;
         display: flex !important;
@@ -11,6 +16,9 @@
         padding-left: 10px;
         padding-right: 10px;
 
+    }
+    &__item{
+        outline: none;
     }
     &__img{
         margin: auto;
@@ -28,6 +36,15 @@
         font-size: 40px;
         
     }
+    &__substrate{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,.6);
+        position: fixed;
+        top: 0;
+        z-index: 20;
+    }
 
 }
 
@@ -37,6 +54,7 @@
 
 @media (max-width: 1250px){
     .work-modal{
+        max-width: 960px;
         &__img{
             width: 570px;
         }
@@ -46,7 +64,8 @@
 
 @media (max-width: 992px){
     .work-modal{
-        width: 80%;
+        max-width: 750px;
+        // width: 80%;
         margin: auto;
         &__img{
             width: 400px;
@@ -65,6 +84,7 @@
 
 @media (max-width: 768px){
     .work-modal{
+        max-width: 100%;
         &__img{
             width: 300px;
             min-height: 220px;
@@ -83,7 +103,9 @@
 
 @media (max-width: 576px){
     .work-modal{
-        width: 80%;
+        // width: 80%;
+        max-width: 100%;
+        left: 0;
         &__img{
             width: 220px;
             min-height: 130px;
@@ -100,7 +122,10 @@
 
 @media (max-width: 440px){
     .work-modal{
-        width: 75%;
+        // width: 75%;
+        max-width: 100%;
+        left: 0;
+        right: 0;
         &__img{
             width: 180px;
             min-height: 110px;

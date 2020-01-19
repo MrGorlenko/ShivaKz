@@ -499,9 +499,13 @@
 }
 
 .work-modal {
-  background: rebeccapurple;
-  top: 100px;
+  visibility: hidden;
+  position: fixed;
+  max-width: 1200px;
+  background: #121212;
+  top: 40px;
   width: 100%;
+  z-index: 98;
 }
 
 .work-modal__slider {
@@ -519,6 +523,10 @@
   padding-right: 10px;
 }
 
+.work-modal__item {
+  outline: none;
+}
+
 .work-modal__img {
   margin: auto;
   margin-top: 50px;
@@ -534,11 +542,24 @@
   font-size: 40px;
 }
 
+.work-modal__substrate {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
 .slick-arrow {
   z-index: 100;
 }
 
 @media (max-width: 1250px) {
+  .work-modal {
+    max-width: 960px;
+  }
   .work-modal__img {
     width: 570px;
   }
@@ -546,7 +567,7 @@
 
 @media (max-width: 992px) {
   .work-modal {
-    width: 80%;
+    max-width: 750px;
     margin: auto;
   }
   .work-modal__img {
@@ -563,6 +584,9 @@
 }
 
 @media (max-width: 768px) {
+  .work-modal {
+    max-width: 100%;
+  }
   .work-modal__img {
     width: 300px;
     min-height: 220px;
@@ -577,7 +601,8 @@
 
 @media (max-width: 576px) {
   .work-modal {
-    width: 80%;
+    max-width: 100%;
+    left: 0;
   }
   .work-modal__img {
     width: 220px;
@@ -593,7 +618,9 @@
 
 @media (max-width: 440px) {
   .work-modal {
-    width: 75%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
   }
   .work-modal__img {
     width: 180px;
@@ -971,12 +998,18 @@ template {
 }
 
 @media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
   .section-title {
     font-size: 50px;
   }
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 300px;
+  }
   .section-title {
     font-size: 35px;
   }
