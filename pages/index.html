@@ -58,7 +58,7 @@
             <h3 class="section-title work__title">С чем я работаю?</h3>
 
             <div class="work-info">
-                <div class="work-info__item">
+                <div class="work-info__item" id="corpTrain">
                     <img src="../images/corp-train.jpg" alt="" class="work-info__img">
                     <label for="" class="work-info__label">Тренинги в корпоративном формате</label>
                 </div>
@@ -84,7 +84,7 @@
                     <div class="work-modal__item">
                         <img src="../images/corp-train.jpg" alt="" class="work-modal__img">
                         <label for="" class="work-modal__label">Тренинги в корпоративном формате</label>
-                        <button class="button button_modal">Подробнее</button>
+                        <button class="button button_modal" id="corpTrainBtn">Подробнее</button>
                     </div>
                     <div class="work-modal__item">
                         <img src="../images/inner-train.jpg" alt="" class="work-modal__img">
@@ -103,9 +103,32 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="modal-window" id="corpTrainModule">
+                <span class="button_close modal-window__button_close" id = "modal-window_close">&times;</span>
+                <h3 class="modal-window__title">Подготовка внутренних тренеров компании.</h3>
+                <p class="modal-window__paragraph">В настоящее время многие 
+                    компании пришли к тому, что эффективнее "вырастить" бизнес-тренера 
+                    из числа экспертных, способных передавать знания (обучать) сотрудников, 
+                    чем приглашать с внешнего рынка.</p>
+                <p class="modal-window__paragraph">Процесс выглядит следующим образом:</p>
+                <ul class="modal-window__list">
+                    <li>Набор сотрудников (рекомендации руководителей, конкурс).</li>
+                    <li>Отбор из представленных кандидатур. (интервью, демо-тренинг, тесты).</li>
+                    <li>Обучение прошедших конкурс сотрудников.</li>
+                    <li>Передача тренинговых программ новым тренерам.</li>
+                    <li>Сопровождение тренеров на первых тренингах.</li>
+                </ul>
+                <p class="modal-window__paragraph">Тренерами могут быть как сотрудники,
+                     продолжающие выполнять свою основную работу, для которых тренерство
+                      будет дополнительным функционалом, так и сотрудники с полной тренерской занятостью.</p>
+                <button class="button button_modal">Заказать</button>
+            </div>
         </div>
 
         <div class="work-modal__substrate"></div>
+
 
     </section>
 
@@ -199,6 +222,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../blocks/modal-window/modal-window.js"></script>
     <script src="../libs/slick/slick.min.js"></script>
     <script src="../blocks/work/work__slider.js"></script>
     <script src="../blocks/consultation/consultation.js"></script>
