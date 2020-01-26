@@ -1,16 +1,30 @@
 $(document).ready(function(){
     var CloseModalWindow = $("#modal-window_close"),
-    corpTrain = $('#corpTrain'),
-    corpTrainModule = $('#corpTrainModule'),
-    corpTrainBtn = $('#corpTrainBtn');
+    coach = $('#coach'),
+    coachModule = $('#coachModule'),
+    coachBtn = $('#coachBtn'),
+    
+    salesDep = $("#SalesDep"),
+    salesDepBtn = $("#SalesDepBtn"),
+    salesDepModule = $("#SalesDepModule");
 
-    corpTrain.on('click', function(){
-        corpTrainModule.css('display', 'flex');
+    coach.on('click', function(){
+        coachModule.css('display', 'flex');
     })
 
-    corpTrainBtn.on('click', function(){
-        corpTrainModule.css('display', 'flex');
-        corpTrainModule.css('z-index', '150');
+    coachBtn.on('click', function(){
+        coachModule.css('display', 'flex');
+        coachModule.css('z-index', '150');
+
+    })
+
+    salesDep.on('click', function(){
+        salesDepModule.css('display', 'flex');
+    })
+
+    salesDepBtn.on('click', function(){
+        salesDepModule.css('display', 'flex');
+        salesDepModule.css('z-index', '150');
 
     })
 
