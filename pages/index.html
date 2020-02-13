@@ -58,19 +58,19 @@
             <h3 class="section-title work__title">С чем я работаю?</h3>
 
             <div class="work-info">
-                <div class="work-info__item" >
+                <div class="work-info__item" id="talents">
                     <img src="../images/corp-train.jpg" alt="" class="work-info__img">
-                    <label for="" class="work-info__label">Тренинги в корпоративном формате</label>
+                    <label for="" class="work-info__label">Управление талантами</label>
                 </div>
                 <div class="work-info__item" id="coach">
                     <img src="../images/inner-train.jpg" alt="" class="work-info__img">
                     <label for="" class="work-info__label">Подготовка внутренних тренеров компании</label>
                 </div>
-                <div class="work-info__item">
+                <div class="work-info__item" id="facilitation">
                     <img src="../images/facilitation.jpg" alt="" class="work-info__img">
                     <label for="" class="work-info__label">Фасилиционные сессии</label>
                 </div>
-                <div class="work-info__item work-info__item_desktop">
+                <div class="work-info__item work-info__item_desktop" id="leaders">
                     <img src="../images/liders.jpg" alt="" class="work-info__img">
                     <label for="" class="work-info__label">Система обучения руководителей</label>
                 </div>
@@ -78,13 +78,15 @@
 
             <button class="button" id="button_work">Все услуги</button>
 
+
+            <!-- Модальное окно со слайдером "Все услуги" -->
             <div class="work-modal" id = "work-modal">
                 <span class="button_close" id = "button_close">&times;</span>
                 <div id="work-modal__slider" class="work-modal__slider">
                     <div class="work-modal__item">
                         <img src="../images/corp-train.jpg" alt="" class="work-modal__img">
-                        <label for="" class="work-modal__label">Тренинги в корпоративном формате</label>
-                        <button class="button button_modal">Подробнее</button>
+                        <label for="" class="work-modal__label">Управление талантами</label>
+                        <button class="button button_modal" id="talentsBtn">Подробнее</button>
                     </div>
                     <div class="work-modal__item">
                         <img src="../images/inner-train.jpg" alt="" class="work-modal__img">
@@ -94,16 +96,65 @@
                     <div class="work-modal__item">
                         <img src="../images/facilitation.jpg" alt="" class="work-modal__img">
                         <label for="" class="work-modal__label">Фасилиционные сессии</label>
-                        <button class="button button_modal" >Подробнее</button>
+                        <button class="button button_modal" id="facilitationBtn">Подробнее</button>
                     </div>
                     <div class="work-modal__item">
                         <img src="../images/liders.jpg" alt="" class="work-modal__img">
                         <label for="" class="work-modal__label">Система обучения руководителей</label>
-                        <button class="button button_modal">Подробнее</button>
+                        <button class="button button_modal" id="leadersBtn">Подробнее</button>
+                    </div>
+                    <div class="work-modal__item">
+                        <img src="../images/values.png" alt="" class="work-modal__img">
+                        <label for="" class="work-modal__label">Управление по ценностям</label>
+                        <button class="button button_modal" id="valuesBtn">Подробнее</button>
                     </div>
                 </div>
             </div>
+            <!-- Модальное окно со слайдером "Все услуги" -->
 
+            <div class="modal-window" id="facilitationModule">
+                <span class="button_close modal-window__button_close" id = "modal-window_close">&times;</span>
+                <h3 class="modal-window__title">Проведение фасилитационных сессий</h3>
+                <p class="modal-window__paragraph">Фасилитация - это:</p>
+                <ul class="modal-window__list">
+                    <li>облегчение взаимодействия внутри группы</li>
+                    <li>процесс оказания помощи группе в выполнении задачи</li>
+                    <li>процесс, позволяющий эффективно организовать обсуждение сложной проблемы или спорной ситуации и без потерь времени выполнить все пункты повестки собрания или совещания</li>
+                    <li>процесс фасилитации приводит к повышению эффективности групповой работы, вовлеченности и заинтересованности участников, раскрытию их потенциала</li>
+                </ul>
+                <button class="button button_modal">Заказать</button>
+            </div>
+
+            <div class="modal-window" id="talentsModule">
+                <span class="button_close modal-window__button_close" id = "modal-window_close">&times;</span>
+                <h3 class="modal-window__title">Программа тренинга «Управление талантами»</h3>
+                <p class="modal-window__paragraph">В последнее время многие компании ставят себе задачу находить, развивать и удерживать талантов. 
+                    Проблема в том, что стандартная модель управления неэффективна в работе с талантами. В данном тренинге собраны успешные мировые кейсы и практики.</p>
+                <p class="modal-window__paragraph">Участники получат возможность обменяться опытом
+                    Познакомятся с международными практиками работы с талантами
+                    Совместно разработают стратегии и тактики управления талантами
+                    Получат конкретные инструменты и модели создания команды талантов и управления ими
+                </p>
+                <button class="button button_modal">Заказать</button>
+            </div>
+
+            <div class="modal-window" id="leadersModule">
+                <span class="button_close modal-window__button_close" id = "modal-window_close">&times;</span>
+                <h3 class="modal-window__title">Система обучения руководителей</h3>
+                <p class="modal-window__paragraph">Часто в компании встречается ситуация, когда в
+                     компании у руководителей  одного позиционного уровня разная подготовка. 
+                     Чаще всего эта проблема возникает с обучением линейного менеджмента.</p>
+                <p class="modal-window__paragraph">Важно погрузить руководителей в одно информационное поле, 
+                    задать стандарты понятные каждому.</p>
+                <p class="modal-window__paragraph">Система предполагает обязательное обучение всех
+                     руководителей по одной программе (набор сквозных тренингов) с регулярной проверкой 
+                     использования полученных знаний и навыков.</p>
+                <p class="modal-window__paragraph">Бывают задачи, когда при внедрении каких либо стандартов, 
+                     нужно массово охватить всех руководителей в короткие сроки. Мы готовы в этом помочь. 
+                     Программа для обучения может быть разработана нашими тренерами, так 
+                     и передана нам заказчиком для внедрения</p>
+                <button class="button button_modal">Заказать</button>
+            </div>
 
             <div class="modal-window" id="coachModule">
                 <span class="button_close modal-window__button_close" id = "modal-window_close">&times;</span>
@@ -123,6 +174,20 @@
                 <p class="modal-window__paragraph">Тренерами могут быть как сотрудники,
                      продолжающие выполнять свою основную работу, для которых тренерство
                       будет дополнительным функционалом, так и сотрудники с полной тренерской занятостью.</p>
+                <button class="button button_modal">Заказать</button>
+            </div>
+
+            <div class="modal-window" id="valuesModule">
+                <span class="button_close modal-window__button_close" id = "modal-window_close">&times;</span>
+                <h3 class="modal-window__title">Программа тренинга «Управление по ценностям»</h3>
+                <p class="modal-window__paragraph">Целевая аудитория тренинга: Руководители, ключевые сотрудники в задачи которых входит формирование модели управления бизнесом, создание корпоративной культуры и управление  hr-брендом.</p>
+                <p class="modal-window__paragraph">По оконачнию обучения ваши руководители научатся создавать модели управления по ценностям и внедрять их в бизнес процессы организации
+                    Научатся делать диагностику ценностей компании  и выявлять причино-следственные связи поведенческих особенностей персонала
+                    </p>
+
+                <p class="modal-window__paragraph">Программа тренинга длится 2 дня, в ходе которых сотруники изучат всё начиная 
+                    с истории возникновения управления по ценностям, заканчивая решениями кейсов и навыками как создать рабочую модель
+                    </p>
                 <button class="button button_modal">Заказать</button>
             </div>
 
