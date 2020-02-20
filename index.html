@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/css/style.css">
-    <link rel="stylesheet" href="../style/css/slick-theme.css">
-    <link rel="stylesheet" href="../style/css/slick.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/slick-theme.css">
+    <link rel="stylesheet" href="style/css/slick.css">
 </head>
 <body class = 'body'>
 
-    <section class="face">
+    <section class="face" id="face">
 
         <div class="contacts">
             <div class="container contacts__container">
@@ -53,7 +53,7 @@
 
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
         <div class="container work__container">
             <h3 class="section-title work__title">С чем я работаю?</h3>
 
@@ -145,7 +145,7 @@
                      компании у руководителей  одного позиционного уровня разная подготовка. 
                      Чаще всего эта проблема возникает с обучением линейного менеджмента.</p>
                 <p class="modal-window__paragraph">Важно погрузить руководителей в одно информационное поле, 
-                    задать стандарты понятные каждому.</p>
+                    задать стандарты понятные каждому.</p> 
                 <p class="modal-window__paragraph">Система предполагает обязательное обучение всех
                      руководителей по одной программе (набор сквозных тренингов) с регулярной проверкой 
                      использования полученных знаний и навыков.</p>
@@ -210,16 +210,81 @@
                     <li>1 Результат - это всегда система</li>
                     <li>2 Упрощать сложно, усложнять легко</li>
                     <li>3 Шедевры рождаются, когда получаешь удовольствие от процесса работы</li>
-                    <button class="button approach__button">Подробнее</button>
+                    <button class="button approach__button" id="approach-button">Подробнее</button>
                 </ol>
             
             <div class="approach__photo">
             </div>
         </div>
 
+    
+
+        <!-- модальное окно подхода -->
+
+        <div class="approach__modal" id="approach-modal">
+            <div class="approach__container_modal container">
+                <span class="button_close modal-window__button_close" id = "modal-approach_close">&times;</span>
+
+                <span class="approach__text_modal">
+                    Чтобы заниматься консультированием, мне понадобилось много лет подготовки...
+                    На протяжении всей моей 18-тилетней карьеры в крупных международных компаниях, 
+                    как в продажах, так и в HR главное в моей работе были люди.
+                </span>
+
+                <p class="approach__title_modal">
+                    С 2009 года провожу тренинги и консультации.
+                </p>
+
+                <span class="approach__text_modal">
+                    Рада быть поддержкой в достижении Ваших целей.
+                    "Не бывает безвыходных ситуаций и
+                    Вы точно разберетесь со своими вопросами,
+                    просто с нами это быстрее..."
+                </span>
+
+                <p class="approach__title_modal">Результаты - это всегда система</p>
+                <span class="approach__text_modal">
+                    Я верю в систему. Все гениальное просто:
+                     если мы хотим хорошую физическую форму - 
+                     недостаточно одной тренинировки за день до 
+                     отпуска. Если мы хотим урожая в саду - нужно 
+                     регулярно поливать растения. Если мы хотим воспитать 
+                     из ребенка личность - нужно регулярно уделять ему время и
+                      передавать знания, воспитывать ценности, которые хотим заложить в его характер.
+                </span>
+                <p class="approach__title_modal">Упрощать сложно, усложнять легко</p>
+                <span class="approach__text_modal">
+                    Я за простоту.  Энштейн считал, 
+                    что «Если вы не можете что-то объяснить 
+                    шестилетнему ребенку, значит, вы сами этого не 
+                    понимаете". Работает то,что просто и понятно. Чем проще 
+                    система, тем легче ей пользоваться. Если системой пользоваться 
+                    легко, значит больше шансов,что сотрудники будут ей пользоваться.
+                </span>
+                <p class="approach__title_modal">Шедевры рождаются, когда получаешь удовольствие от процесса работы</p>
+                <span class="approach__text_modal">
+                    Мне нравится создавать системы. 
+                    Нравится анализировать и находить 
+                    "белые пятна"  - причины, по которым бизнес процессы могут давать сбой.
+                </span>
+                <span class="approach__text_modal">
+                    Пример: в компании была проблема с 
+                    вовлеченностью сотрудников в процесс обучения. 
+                    Сложно было "уговорить" внутреннего эксперта поделиться 
+                    знаниями с остальными сотрудниками. В результате, "белым 
+                    пятном" оказалось отсутствие связи между внутреннним тренерством 
+                    и статусом сотрудника-эксперта. Мы продумали систему мотивации, 
+                    связали внутренннее тренерство с возможностью карьерного перемещения. 
+                    Ситуация заметно изменилась в лучшую сторону.
+                </span>
+            </div>
+        </div>
+
+        <!-- модальное окно подхода -->
+
     </section>
 
-    <section class="experience">
+    <section class="experience" id="experience">
 
         <h3 class="section-title experience__title">Мой опыт</h3>
 
@@ -239,7 +304,7 @@
         </div>
     </section>
 
-    <section class="consultation">
+    <section class="consultation" id="consultation">
         <h3 class="section-title consultation__title" > Консультации </h3>
         <hr class="underline">
         <div class="consultation__slider-global">
@@ -262,7 +327,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container footer__container">
             <div class="footer__block footer__block_label">
             <h4 class="footer__label">Я в соцсетях</h4>
@@ -289,9 +354,10 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="../blocks/modal-window/modal-window.js"></script>
-    <script src="../libs/slick/slick.min.js"></script>
-    <script src="../blocks/work/work__slider.js"></script>
-    <script src="../blocks/consultation/consultation.js"></script>
+    <script src="blocks/modal-window/modal-window.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="blocks/work/work__slider.js"></script>
+    <script src="blocks/consultation/consultation.js"></script>
+    <script src="blocks/approach/approach.js"></script>
 </body>
 </html>

@@ -664,6 +664,11 @@
   margin-bottom: 0;
 }
 
+.approach__title_modal {
+  text-align: center;
+  font-size: 25px;
+}
+
 .approach__container {
   min-height: 700px;
   margin-top: 70px;
@@ -738,6 +743,20 @@
   background-position-x: -320px;
 }
 
+.approach__modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  background: inherit;
+  min-height: 100%;
+}
+
+.approach__text_modal {
+  font-size: 18px;
+}
+
 @media (max-width: 1250px) {
   .approach__list {
     font-size: 23px;
@@ -747,9 +766,13 @@
 @media (max-width: 992px) {
   .approach {
     min-height: 935px;
+    position: relative;
   }
   .approach__container {
     max-height: 575px;
+  }
+  .approach__container_modal {
+    max-width: 565px !important;
   }
   .approach__list {
     width: 100%;
@@ -766,6 +789,20 @@
   .approach__photo {
     display: none;
   }
+  .approach__title_modal {
+    font-size: 22px;
+  }
+  .approach__modal {
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .approach__text_modal {
+    font-size: 16px;
+    text-align: justify;
+    display: block;
+  }
 }
 
 @media (max-width: 576px) {
@@ -775,6 +812,9 @@
   .approach__container {
     min-height: 420px;
   }
+  .approach__container_modal {
+    max-width: 310px !important;
+  }
   .approach__list {
     font-size: 18px;
   }
@@ -782,6 +822,13 @@
     margin-top: 25px;
     width: 28px;
     height: 55px;
+  }
+  .approach__text_modal {
+    font-size: 15px;
+  }
+  .approach__modal {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 

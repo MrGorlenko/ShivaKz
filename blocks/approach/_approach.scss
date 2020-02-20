@@ -3,6 +3,10 @@
     background: #C7C7C7;
     &__title{
         margin-bottom: 0;
+        &_modal{
+            text-align: center;
+            font-size: 25px;
+        }
     }
     &__container{
         min-height: 700px;
@@ -55,6 +59,22 @@
         background-size: cover;
         background-position-x: -320px;
     }
+
+    &__modal{
+        display: none;
+        position:fixed;
+        z-index: 5;
+        top: 0;
+        width: 100%;
+        background: inherit;
+        min-height: 100%;
+        // display: flex;
+    }
+    &__text{
+        &_modal{
+            font-size: 18px;
+        }
+    }
 }
 
 
@@ -69,8 +89,12 @@
 @media (max-width: 992px){
     .approach{
         min-height: 935px;
+        position: relative;
         &__container{
             max-height: 575px;
+            &_modal{
+                max-width: 565px !important;
+            }
         }
         &__list{
             width: 100%;
@@ -87,6 +111,25 @@
         &__photo{
             display: none;
         }
+        &__title{
+            &_modal{
+                font-size: 22px;
+            }
+        }
+        &__modal{
+            position: absolute;
+            top: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        &__text{
+            &_modal{
+                font-size: 16px;
+                text-align: justify;
+                display: block;
+            }
+        }
     }
 }
 
@@ -95,6 +138,9 @@
         min-height: 640px;
         &__container{
             min-height: 420px;
+            &_modal{
+                max-width: 310px !important;
+            }
         }
         &__list{
             font-size: 18px;
@@ -103,6 +149,15 @@
                 width: 28px;
                 height: 55px;
             }
+        }
+        &__text{
+            &_modal{
+                font-size: 15px;
+            }
+        }
+        &__modal{
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
     }
 }
