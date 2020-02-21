@@ -160,7 +160,7 @@
   background-color: #121212;
   -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 105;
 }
 
 .menu__item {
@@ -272,6 +272,7 @@
 @media (max-width: 576px) {
   .menu__box {
     width: 240px;
+    z-index: 106;
   }
   .menu__item {
     font-size: 20px;
@@ -978,7 +979,7 @@
     margin-bottom: 25px;
   }
   .experience__modal {
-    min-height: 265%;
+    min-height: 300%;
     max-height: 330%;
   }
 }
@@ -1022,6 +1023,7 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+  outline: none;
 }
 
 .consultation__content {
@@ -1081,7 +1083,7 @@
 
 @media (max-width: 576px) {
   .consultation {
-    min-height: 684px;
+    min-height: 723px;
   }
   .consultation__content {
     width: 250px;

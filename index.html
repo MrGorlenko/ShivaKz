@@ -21,24 +21,24 @@
         </div>
 
         <div class="navigation">
-            <div class="container navigation__container">
-                <a href="#" class="navigation__link">Консультации</a>
-                <a href="#" class="navigation__link">Обо мне</a>
-                <a href="#" class="navigation__link">Мой подход</a>
-                <a href="#" class="navigation__link">Бизнесу</a>
-            </div>
+            <ul class="container navigation__container" id="menu">
+                <a href="#consultation" class="navigation__link">Консультации</a>
+                <a href="#experience" class="navigation__link">Обо мне</a>
+                <a href="#approach" class="navigation__link">Мой подход</a>
+                <a href="#work" class="navigation__link">Бизнесу</a>
+            </ul>
         </div>
 
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
+            <label class="menu__btn" for="menu__toggle" id="menu_hamburger">
+              <span id="menu_hamburger-close"></span>
             </label>
-            <ul class="menu__box">
-              <li><a class="menu__item" href="#">Обо мне</a></li>
-              <li><a class="menu__item" href="#">Консультации</a></li>
-              <li><a class="menu__item" href="#">Мой подход</a></li>
-              <li><a class="menu__item" href="#">Бизнесу</a></li>
+            <ul class="menu__box" id="menu-box">
+              <li><a class="menu__item" href="#experience">Обо мне</a></li>
+              <li><a class="menu__item" href="#consultation">Консультации</a></li>
+              <li><a class="menu__item" href="#approach">Мой подход</a></li>
+              <li><a class="menu__item" href="#work">Бизнесу</a></li>
               <li><a class="menu__item menu__item_contacts" href="#">телефон: +7 777 010 0586</a></li>
               <li><a class="menu__item menu__item_contacts menu__item_mail" href="#">yuliya.shiva@gmail.com</a></li>
             </ul>
@@ -53,7 +53,7 @@
 
     </section>
 
-    <section class="work" id="work">
+    <section class="work" id="work" name="work">
         <div class="container work__container">
             <h3 class="section-title work__title">С чем я работаю?</h3>
 
@@ -199,7 +199,7 @@
 
     </section>
 
-    <section class="approach" id="approach">
+    <section class="approach" id="approach" name="approach">
 
         <h3 class="section-title approach__title">Мой подход</h3>
         <hr class="underline">
@@ -284,7 +284,7 @@
 
     </section>
 
-    <section class="experience" id="experience">
+    <section class="experience" id="experience" name="experience">
 
         <h3 class="section-title experience__title">Мой опыт</h3>
 
@@ -340,7 +340,7 @@
 
     </section>
 
-    <section class="consultation" id="consultation">
+    <section class="consultation" id="consultation" name="consultation">
         <h3 class="section-title consultation__title" > Консультации </h3>
         <hr class="underline">
         <div class="consultation__slider-global">
@@ -396,5 +396,6 @@
     <script src="blocks/consultation/consultation.js"></script>
     <script src="blocks/approach/approach.js"></script>
     <script src="blocks/experience/experience.js"></script>
+    <script src="blocks/menu/menu.js"></script>
 </body>
 </html>
