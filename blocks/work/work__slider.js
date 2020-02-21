@@ -8,7 +8,15 @@ $(document).ready(function(){
 
 
     $('#work-modal__slider').slick({
-        infinite: true
+        infinite: true,
+        responsive:[{
+            breakpoint: 576,
+            settings: {
+                dots: true,
+                arrows: false
+            }
+          }
+        ]
     });
 
 

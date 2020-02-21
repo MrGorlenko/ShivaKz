@@ -2,10 +2,10 @@
     display: none;
     position: fixed;
     background: #121212;
-    top: 50px;
+    top: 0px;
     min-width: 1200px;
     max-width: 1200px;
-    min-height: 75vh;
+    min-height: 100vh;
     border-radius: 15px;
     // display: flex;
     flex-direction: column;
@@ -58,27 +58,33 @@
     .modal-window{
         min-width: 100%;
         max-width: 100%;
+        &__title{
+            font-size: 28px;
+        }
+        &__paragraph{
+            font-size: 20px;
+        }
+        &__list{
+            font-size: 18px;
+        }
     }
 }
 
 @media (max-width: 576px){
     .modal-window{
-        min-height: 85vh;
+        min-height: 100vh;
         min-width: 100%;
         max-width: 100%;
         left:0;
         &__title{
             width: 290px;
             text-align: center;
-            font-size: 17px;
+            font-size: 21px;
         }
         &__paragraph{
             max-width: 295px;
-            font-size: 13px;
+            font-size: 17px;
             text-align: justify;
-        }
-        &__list{
-            font-size: 14px;
         }
     }
 }

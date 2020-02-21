@@ -4,7 +4,7 @@
     position: fixed;
     max-width:1200px;
     background: #121212;
-    top: 40px;
+    top: 20px;
     width: 100%;
     z-index: 98;
     &__slider{
@@ -80,6 +80,11 @@
         }
     }
 
+    .button{
+        &_close{
+            right: 15px;
+        }
+    }
     .slick-arrow{
         width: 90px;
     }
@@ -110,7 +115,7 @@
         max-width: 100%;
         left: 0;
         &__img{
-            width: 220px;
+            width: 315px;
             min-height: 130px;
             margin-top: 0;
         }
@@ -131,7 +136,7 @@
         left: 0;
         right: 0;
         &__img{
-            width: 180px;
+            width: 300px;
             min-height: 110px;
         }
         &__label{
@@ -140,6 +145,11 @@
             margin-top: 20px;
         }
 
+    }
+    .button{
+        &_close{
+            right:15px;
+        }
     }
     .slick-arrow{
         width: 35px;
