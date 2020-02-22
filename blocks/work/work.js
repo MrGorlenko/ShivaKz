@@ -7,7 +7,8 @@ $(document).ready(function(){
     footer = $("#footer"),
     experience = $("#experience"),
     approach = $("#approach"),
-    modalWindowClose = $("#modal-window_close");
+    workInfo = $("#work-info"),
+    modalWindowClose = $(".modal-window__button_close");
 
 
     workImg.on('click', function(){
@@ -15,6 +16,7 @@ $(document).ready(function(){
         experience.css('display', 'none');
         approach.css('display', 'none');
         consultation.css('display', 'none');
+        workInfo.css('display', 'none');
         footer.css('display', 'none');
         })
 
@@ -23,6 +25,7 @@ $(document).ready(function(){
         experience.css('display', 'block');
         approach.css('display', 'block');
         consultation.css('display', 'block');
+        workInfo.css('display', 'block');
         footer.css('display', 'block');
     })
 
