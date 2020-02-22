@@ -3,6 +3,7 @@
     min-height: 804px;
     &__title{
         margin-bottom: 0;
+        color:#121212;
     }
     &__slider-global{
         width: 80%;
@@ -73,7 +74,7 @@
 
 @media (max-width: 576px){
     .consultation{
-        min-height: 723px;
+        min-height: 714px;
         &__content{
             width: 250px;
             min-height: 460px;

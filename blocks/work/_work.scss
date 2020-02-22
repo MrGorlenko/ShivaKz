@@ -11,3 +11,13 @@
         color: #C7C7C7;
     }
 }
+
+
+@media (max-width: 578px){
+    .work{
+        &__container{
+            // width: 100%;
+            max-width: 100%;
+        }
+    }
+}

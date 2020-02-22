@@ -3,9 +3,11 @@
     background: #C7C7C7;
     &__title{
         margin-bottom: 0;
+        color:#121212;
         &_modal{
             text-align: center;
             font-size: 25px;
+            color:#121212;
         }
     }
     &__container{
@@ -15,6 +17,7 @@
     }
     &__list{
         width: 50%;
+        color:#121212;
     }
     &__list{
         margin-top: 0;
@@ -73,6 +76,7 @@
     &__text{
         &_modal{
             font-size: 18px;
+            color: #121212;
         }
     }
 }

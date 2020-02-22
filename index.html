@@ -29,20 +29,19 @@
             </ul>
         </div>
 
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle" id="menu_hamburger">
-              <span id="menu_hamburger-close"></span>
-            </label>
-            <ul class="menu__box" id="menu-box">
-              <li><a class="menu__item" href="#experience">Обо мне</a></li>
-              <li><a class="menu__item" href="#consultation">Консультации</a></li>
-              <li><a class="menu__item" href="#approach">Мой подход</a></li>
-              <li><a class="menu__item" href="#work">Бизнесу</a></li>
-              <li><a class="menu__item menu__item_contacts" href="#">телефон: +7 777 010 0586</a></li>
-              <li><a class="menu__item menu__item_contacts menu__item_mail" href="#">yuliya.shiva@gmail.com</a></li>
+        <div class="nav-toggle">
+            <div class="nav-toggle-bar"></div>
+        </div>
+        <nav class="nav">
+            <ul id="menu-box">
+                <li><a class="menu__item" href="#experience">Обо мне</a></li>
+                <li><a class="menu__item" href="#consultation">Консультации</a></li>
+                <li><a class="menu__item" href="#approach">Мой подход</a></li>
+                <li><a class="menu__item" href="#work">Бизнесу</a></li>
+                <li><a class="menu__item menu__item_contacts menu__item_phone" href="#">телефон: <br> +7 777 010 0586</a></li>
+                <li><a class="menu__item menu__item_contacts menu__item_mail" href="#">yuliya.shiva@gmail.com</a></li>
             </ul>
-          </div>
+        </nav>
 
         <div class="container ">
             <h1 class="header">Шива</h1><h1 class="header header_white">Юлия</h1>
@@ -54,24 +53,24 @@
     </section>
 
     <section class="work" id="work" name="work">
-        <div class="container work__container">
+        <div class="work__container">
             <h3 class="section-title work__title">С чем я работаю?</h3>
 
             <div class="work-info">
-                <div class="work-info__item" id="talents">
-                    <img src="images/corp-train.jpg" alt="" class="work-info__img">
+                <div class="work-info__item">
+                    <img src="images/corp-train.jpg" alt="" class="work-info__img" id="talents">
                     <label for="" class="work-info__label">Управление талантами</label>
                 </div>
-                <div class="work-info__item" id="coach">
-                    <img src="images/inner-train.jpg" alt="" class="work-info__img">
+                <div class="work-info__item">
+                    <img src="images/inner-train.jpg" alt="" class="work-info__img" id="coach">
                     <label for="" class="work-info__label">Подготовка внутренних тренеров компании</label>
                 </div>
-                <div class="work-info__item" id="facilitation">
-                    <img src="images/facilitation.jpg" alt="" class="work-info__img">
+                <div class="work-info__item">
+                    <img src="images/facilitation.jpg" alt="" class="work-info__img"  id="facilitation">
                     <label for="" class="work-info__label">Фасилиционные сессии</label>
                 </div>
-                <div class="work-info__item work-info__item_desktop" id="leaders">
-                    <img src="images/liders.jpg" alt="" class="work-info__img">
+                <div class="work-info__item work-info__item_desktop">
+                    <img src="images/liders.jpg" alt="" class="work-info__img" id="leaders">
                     <label for="" class="work-info__label">Система обучения руководителей</label>
                 </div>
             </div>
@@ -347,14 +346,14 @@
         <div class="consultation__slider" id="consultation-slider">
             <div class="consultation__item">
                 <div class="consultation__content">
-                    <img class="consultation__image" src="../images/brain.png" alt="">
+                    <img class="consultation__image" src="images/brain.png" alt="">
                     <span class="consultation__label">Работа с подсознанием</span>
                     <button class="button consultation__button">Подробнее</button>
                 </div>
             </div>
             <div class="consultation__item">
                 <div class="consultation__content">
-                    <img class="consultation__image" src="../images/laptop.png" alt="">
+                    <img class="consultation__image" src="images/laptop.png" alt="">
                     <span class="consultation__label">Вид консультации</span>
                     <button class="button consultation__button">Подробнее</button>
                 </div>
@@ -397,5 +396,6 @@
     <script src="blocks/approach/approach.js"></script>
     <script src="blocks/experience/experience.js"></script>
     <script src="blocks/menu/menu.js"></script>
+    <script src="blocks/work/work.js"></script>
 </body>
 </html>
