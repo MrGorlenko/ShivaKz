@@ -68,24 +68,6 @@
     .work-info{
         &__item{
             min-height: 398px;
-            &:hover{
-                &:after{
-                    opacity: 1;
-    
-                }
-            }
-            &:after{
-                background: linear-gradient(180deg, #ADB00C 15.14%, rgba(201, 203, 95, 0.658215) 30.17%, rgba(213, 215, 131, 0.510417) 44.31%, rgba(235, 237, 129, 0.495728) 55.36%, rgba(255, 255, 255, 0) 84.09%), linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
-                content: '';
-                position: absolute;
-                left: 0;
-                width: 100%;
-                color: #fff;
-                text-decoration: none;
-                opacity: 0;
-                transition: opacity 0.3s;
-                transform: matrix(1, 0, 0, -1, 0, 0);
-            }
         }
     }
 }

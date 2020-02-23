@@ -25,7 +25,7 @@ $(document).ready(function(){
         experience.css('display', 'block');
         approach.css('display', 'block');
         consultation.css('display', 'block');
-        workInfo.css('display', 'block');
+        workInfo.css('display', 'grid');
         footer.css('display', 'block');
     })
 
