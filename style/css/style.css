@@ -1391,6 +1391,9 @@ a:hover {
     font-size: 19px;
     max-width: 650px;
   }
+  .modal-window_slider {
+    height: 100%;
+  }
 }
 
 @media (max-width: 992px) {
