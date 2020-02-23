@@ -1072,11 +1072,15 @@ a:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#121212), color-stop(50%, #121212), color-stop(50%, #121212), color-stop(50%, #C7C7C7), to(#C7C7C7));
   background: linear-gradient(to top, #121212 0%, #121212 50%, #121212 50%, #C7C7C7 50%, #C7C7C7 100%);
   min-height: 804px;
+  position: relative;
 }
 
 .consultation__title {
   margin-bottom: 0;
   color: #121212;
+  font-size: 33px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .consultation__slider-global {
@@ -1129,6 +1133,32 @@ a:hover {
   color: #121212;
 }
 
+.consultation__modal {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #C7C7C7;
+  z-index: 110;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consultation__text {
+  color: #121212;
+  font-size: 21px;
+  display: block;
+  width: 80%;
+  margin-top: 10px;
+  text-align: justify;
+}
+
 @media (max-width: 992px) {
   .consultation {
     min-height: 685px;
@@ -1141,6 +1171,9 @@ a:hover {
   }
   .consultation__label {
     font-size: 24px;
+  }
+  .consultation__modal {
+    height: 130%;
   }
 }
 
@@ -1157,6 +1190,9 @@ a:hover {
   .consultation__image {
     margin-top: 20px;
     width: 55%;
+  }
+  .consultation__modal {
+    height: 145%;
   }
 }
 
@@ -1177,6 +1213,15 @@ a:hover {
     width: 200px;
     height: 40px;
     font-size: 18px;
+  }
+  .consultation__modal {
+    height: 155%;
+  }
+  .consultation__title {
+    font-size: 28px;
+  }
+  .consultation__text {
+    font-size: 16px;
   }
 }
 

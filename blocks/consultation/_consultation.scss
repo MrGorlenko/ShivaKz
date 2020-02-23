@@ -1,9 +1,13 @@
 .consultation{
     background: linear-gradient(to top, #121212 0%,#121212 50%, #121212 50%,#C7C7C7 50%,#C7C7C7 100%);
     min-height: 804px;
+    position: relative;
     &__title{
         margin-bottom: 0;
         color:#121212;
+        font-size: 33px;
+        margin-bottom: 25px;
+        text-align: center;
     }
     &__slider-global{
         width: 80%;
@@ -35,15 +39,31 @@
         font-size: 27px;
         color: #121212;
     }
+    &__modal{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #C7C7C7;
+        z-index: 110;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__text{
+        color:#121212;
+        font-size: 21px;
+        display: block;
+        width: 80%;
+        margin-top: 10px;
+        text-align: justify;
+    }
 }
 
 
 @media (max-width: 992px){
     .consultation{
         min-height: 685px;
-        // &__slider-global{
-        //     width: 60%;
-        // }
         &__content{
             width: 395px;
         }
@@ -52,6 +72,9 @@
         }
         &__label{
             font-size: 24px;
+        }
+        &__modal{
+            height: 130%;
         }
     }
 }
@@ -68,6 +91,9 @@
         &__image{
             margin-top: 20px;
             width: 55%;
+        }
+        &__modal{
+            height: 145%;
         }
     }
 }
@@ -87,6 +113,15 @@
             width: 200px;
             height: 40px;
             font-size: 18px;
+        }
+        &__modal{
+            height: 155%;
+        }
+        &__title{
+            font-size: 28px;
+        }
+        &__text{
+            font-size: 16px;
         }
     }
 }
