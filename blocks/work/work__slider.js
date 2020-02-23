@@ -4,7 +4,16 @@ $(document).ready(function(){
      buttonWork = $('#button_work'),
      buttonClose = $('#button_close'),
      modalSubstrate = $('.work-modal__substrate'),
-     body = $('.body');
+     body = $('.body'),
+     buttonModal = $(".button_modal"),
+     
+     
+     face = $("#face"),
+     work = $("#work"),
+     consultation = $("#consultation"),
+     footer = $("#footer"),
+     experience = $("#experience"),
+     approach = $("#approach");
 
 
     $('#work-modal__slider').slick({
@@ -22,15 +31,16 @@ $(document).ready(function(){
 
     buttonWork.on('click', function(){
         workModal.css('visibility', 'visible');
+        workModal.css('display', 'flex');
         modalSubstrate.css('display', 'block');
-        body.css('overflow', 'hidden')
     });
 
     buttonClose.on('click', function(){
         workModal.css('visibility', 'hidden');
         modalSubstrate.css('display', 'none');
-        body.css('overflow', 'initial')
     });
+
+
     
 });
 

@@ -3,6 +3,8 @@
     &__container{
         position: relative;
         padding-bottom: 50px;
+        width: 95%;
+        margin: auto;
     }
     &__title{
         margin-top: 0;
@@ -16,8 +18,8 @@
 @media (max-width: 578px){
     .work{
         &__container{
-            // width: 100%;
-            max-width: 100%;
+            width: 100%;
+            // max-width: 100%;
         }
     }
 }

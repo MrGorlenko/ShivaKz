@@ -1,0 +1,26 @@
+.modal-section {
+  position: relative;
+}
+
+.modal-section__container {
+  min-height: 700px;
+  max-height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-body {
+  background-color: #121212 !important;
+}
+
+@media (max-width: 576px) {
+  .modal-section__container {
+    min-height: 100vh;
+    max-height: 130vh;
+  }
+}
+/*# sourceMappingURL=modal-section.css.map */

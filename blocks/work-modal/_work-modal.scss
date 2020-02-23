@@ -1,7 +1,8 @@
 .work-modal{
-    // display: none;
-    visibility: hidden;
-    position: fixed;
+    display: block;
+    // visibility: hidden;
+    // position: fixed;
+    position: absolute;
     max-width:1200px;
     background: #121212;
     top: 20px;
@@ -67,6 +68,7 @@
         max-width: 750px;
         min-height: 80vh;
         display: flex;
+        // display: none;
     
         // width: 80%;
         margin: auto;

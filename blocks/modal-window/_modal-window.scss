@@ -1,7 +1,6 @@
 .modal-window{
     z-index: 5;
     display: none;
-    // position: fixed;
     position: absolute;
     background: #121212;
     top: 0px;
@@ -9,7 +8,6 @@
     max-width: 1200px;
     min-height: 100vh;
     border-radius: 15px;
-    // display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -31,6 +29,7 @@
     &__list{
         color:#C7C7C7;
     }
+
 }
 
 @media (max-width: 1250px){

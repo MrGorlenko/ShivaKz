@@ -24,7 +24,18 @@ $(document).ready(function(){
 
     
     valuesBtn = $('#valuesBtn'),
-    valuesModule = $('#valuesModule');
+    valuesModule = $('#valuesModule'),
+    buttonModal = $(".button_modal"),
+    workModal = $(".work-modal"),
+    workModalSubstrate = $(".work-modal__substrate"),
+    
+    face = $("#face"),
+    work = $("#work"),
+    consultation = $("#consultation"),
+    footer = $("#footer"),
+    experience = $("#experience"),
+    approach = $("#approach"),
+    modalWorkNonSection = $(".modal-window_non-section");
 
     talents.on('click', function(){
         talentsModule.css('display', 'flex');
@@ -85,4 +96,18 @@ $(document).ready(function(){
     modalWindow__button_close.on('click', function(){
         $(".modal-window").css('display', 'none');
     })
+
+    buttonModal.on('click', function(){
+        modalWorkNonSection.css('display', 'flex');
+        // modalWorkNonSection.css('display', 'flex');
+        workModalSubstrate.css('display', 'none');
+        face.css('display', 'none');
+        work.css('display', 'none');
+        experience.css('display', 'none');
+        approach.css('display', 'none');
+        consultation.css('display', 'none');
+        footer.css('display', 'none');
+    })
+
+
 })
