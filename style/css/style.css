@@ -16,10 +16,16 @@
 
 @media (max-width: 768px) {
   .face {
-    background-position-x: -225px;
+    background-position-x: 0;
   }
   .face__tagline {
     font-size: 34px;
+  }
+}
+
+@media screen and (max-height: 330px), screen and (max-width: 768px) {
+  .face {
+    background-position-x: -225px;
   }
 }
 
@@ -1175,7 +1181,7 @@ a:hover {
 
 @media (max-width: 992px) {
   .consultation {
-    min-height: 685px;
+    min-height: 714px;
   }
   .consultation__content {
     width: 395px;
@@ -1426,6 +1432,8 @@ a:hover {
   .modal-window {
     width: 100%;
     left: 0;
+    min-height: 100%;
+    max-height: 130%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;

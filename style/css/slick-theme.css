@@ -175,7 +175,7 @@
   .slick-prev,
   .slick-next{
     width: 8%;
-    height: 20%;
+    height: 22%;
   }
 
   .slick-next:before {
@@ -190,6 +190,10 @@
 }
 
 @media (max-width: 768px){
+  .slick-next,
+  .slick-prev{
+    height: 26%;
+  }
   .slick-next {
     right: 70px;
   }
@@ -202,8 +206,8 @@
   .slick-prev,
   .slick-next{
     top:40%;
-    width: 8%;
-    height: 20%;
+    width: 11%;
+    height: 23%;
   }
 }
 
@@ -211,7 +215,6 @@
   .slick-prev,
   .slick-next{
     width: 19%;
-    height: 20%;
   }
 
   .slick-next {
