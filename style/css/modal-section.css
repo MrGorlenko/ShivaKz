@@ -17,6 +17,12 @@
   background-color: #121212 !important;
 }
 
+@media (min-width: 992px) {
+  .modal-section__container {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 576px) {
   .modal-section__container {
     min-height: 100vh;

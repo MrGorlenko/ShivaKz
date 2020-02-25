@@ -12,6 +12,14 @@
     background-color: #121212 !important;
 }
 
+@media (min-width: 992px){
+    .modal-section{
+        &__container{
+            height: 100vh;
+        }
+    }
+}
+
 
 @media (max-width: 576px){
     .modal-section{

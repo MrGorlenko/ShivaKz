@@ -2,6 +2,7 @@
     min-height: 300px;
     background: #C7C7C7;
     &__container{
+        padding-top: 40px;
         display: flex;
         min-height: 250px;
     }
@@ -29,10 +30,20 @@
         text-decoration: none;
         font-size: 22px;
         &_social{
-            background: #000;
+            // background: #000;
             width: 55px;
             height: 55px;
+            background-size: contain;
             border-radius: 30px;
+        }
+        &_whatsapp{
+            background-image: url('../../images/icon-whatsapp.png') ;      
+        }
+        &_facebook{
+            background-image: url('../../images/icon-facebook.png');
+        }
+        &_telegram{
+            background-image: url('../../images/icons-talagram.png');
         }
     }
     &__name{

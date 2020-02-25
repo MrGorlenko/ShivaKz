@@ -52,6 +52,9 @@
     .modal-window{
         width: 100%;
         left:0;
+        // height: 120vh;
+        min-height: 115vh;
+        max-height: 130vh;
         &__title{
             font-size: 35px;
         }
@@ -63,9 +66,6 @@
         &__list{
             font-size: 19px;
             max-width: 650px;
-        }
-        &_slider{
-            height: 100%;
         }
     }
 }
