@@ -1232,7 +1232,7 @@ a:hover {
 
 @media (max-width: 576px) {
   .consultation {
-    min-height: 714px;
+    min-height: 740px;
   }
   .consultation__content {
     width: 250px;
