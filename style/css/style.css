@@ -213,6 +213,11 @@
   z-index: 1;
 }
 
+.menu__block {
+  position: absolute;
+  bottom: 20%;
+}
+
 /* imports */
 /* colors */
 /* variables */
@@ -275,7 +280,7 @@ a:hover {
 .nav-toggle .nav-toggle-bar::after,
 .nav-toggle .nav-toggle-bar::before {
   position: absolute;
-  top: 38%;
+  top: 25%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transition: all 0.5s ease;
@@ -341,7 +346,7 @@ a:hover {
 
 .nav ul {
   position: absolute;
-  top: 38%;
+  top: 25%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   list-style: none;
@@ -371,6 +376,15 @@ a:hover {
   }
   #menu-box {
     width: inherit;
+  }
+}
+
+@media (max-height: 400px) {
+  .menu__block {
+    display: none;
+  }
+  #menu-box {
+    top: 50%;
   }
 }
 

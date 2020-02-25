@@ -50,73 +50,12 @@
         cursor: pointer;
         z-index: 1;
     }
+    &__block{
+      position: absolute;
+      bottom: 20%;
+    }
 }
 
-// .menu__btn > span,
-// .menu__btn > span::before,
-// .menu__btn > span::after {
-//   display: block;
-//   position: absolute;
-//   width: 100%;
-//   height: 2px;
-//   background-color: #000;
-// }
-// .menu__btn > span::before {
-//   content: '';
-//   top: -8px;
-// }
-// .menu__btn > span::after {
-//   content: '';
-//   top: 8px;
-// }
-
-// .menu__btn > span,
-// .menu__btn > span::before,
-// .menu__btn > span::after {
-//   transition-duration: .25s;
-// }
-// .menu__box {
-//   transition-duration: .25s;
-// }
-// .menu__item {
-//   transition-duration: .25s;
-// }
-
-// #menu__toggle{
-//     opacity: 0;
-// }
-
-// #menu__toggle:checked ~ .menu__btn > span {
-//     transform: rotate(45deg);
-//   }
-//   #menu__toggle:checked ~ .menu__btn > span::before {
-//     top: 0;
-//     transform: rotate(0);
-//   }
-//   #menu__toggle:checked ~ .menu__btn > span::after {
-//     top: 0;
-//     transform: rotate(90deg);
-//   }
-//   #menu__toggle:checked ~ .menu__box {
-//     visibility: visible;
-//     left: 0;
-//   }
-
-// @media (max-width: 576px){
-//     .menu{
-//         &__box{
-//             width: 240px;
-//             z-index: 106;
-            
-//         }
-//         &__item{
-//             font-size: 20px;
-//             &_mail{
-//                 font-size: 17px;
-//             }
-//         }
-//     }
-// }
 
 
 /* imports */
@@ -147,7 +86,7 @@ $z-nav: 1;
 
 @mixin center-vertically($position: absolute) {
 	position: $position;
-	top: 38%;
+	top: 25%;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -286,5 +225,16 @@ a {
 
   #menu-box{
     width: inherit;
+  }
+}
+
+@media (max-height: 400px){
+  .menu{
+    &__block{
+      display: none;
+    } 
+  }
+  #menu-box{
+    top: 50%;
   }
 }
