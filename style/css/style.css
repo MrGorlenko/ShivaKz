@@ -1099,7 +1099,7 @@ a:hover {
 .consultation {
   background: -webkit-gradient(linear, left bottom, left top, from(#121212), color-stop(50%, #121212), color-stop(50%, #121212), color-stop(50%, #C7C7C7), to(#C7C7C7));
   background: linear-gradient(to top, #121212 0%, #121212 50%, #121212 50%, #C7C7C7 50%, #C7C7C7 100%);
-  min-height: 804px;
+  min-height: 830px;
   position: relative;
 }
 
@@ -1195,7 +1195,7 @@ a:hover {
 
 @media (max-width: 992px) {
   .consultation {
-    min-height: 714px;
+    min-height: 704px;
   }
   .consultation__content {
     width: 395px;
