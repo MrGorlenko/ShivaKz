@@ -16,16 +16,16 @@
 
 @media (max-width: 768px) {
   .face {
-    background-position-x: 0;
+    background-position-x: -225px;
   }
   .face__tagline {
     font-size: 34px;
   }
 }
 
-@media screen and (max-height: 330px), screen and (max-width: 768px) {
+@media screen and (max-height: 400px) {
   .face {
-    background-position-x: -225px;
+    background-position-x: 0;
   }
 }
 
