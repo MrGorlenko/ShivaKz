@@ -1189,7 +1189,7 @@ a:hover {
 
 @media (min-width: 992px) {
   .consultation__modal {
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -1253,6 +1253,7 @@ a:hover {
   }
   .consultation__title {
     font-size: 28px;
+    margin-top: 55px;
   }
   .consultation__text {
     font-size: 16px;

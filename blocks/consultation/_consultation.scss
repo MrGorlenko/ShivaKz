@@ -63,7 +63,7 @@
 @media (min-width: 992px){
     .consultation{
         &__modal{
-            height: 100vh;
+            height: 100%;
         }
     }
 }
@@ -126,6 +126,7 @@
         }
         &__title{
             font-size: 28px;
+            margin-top: 55px;
         }
         &__text{
             font-size: 16px;
